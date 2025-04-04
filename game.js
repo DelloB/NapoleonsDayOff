@@ -141,7 +141,7 @@ const story = {
         art: "wpo.png"
     },
     "inspectionSpy": {
-        text: "You employ tactics such as incentives and more to sniff out any possible rats in your army.",
+        text: "You employed tactics such as incentives and more to sniff out any possible rats in your army.",
         choices: [
             { text: "TEST YOUR ARMY'S LOYALTY", next: "chapterEnd", CharismaChange: 5, Combat_StrengthChange: 5 }
         ],
