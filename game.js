@@ -61,7 +61,7 @@ const story = {
         text: "You head to the training fields yourself. What combat aspect will you focus on?",
         choices: [
             { text: "Maneuverability and Speed", next: "combatSpeed", CharismaChange: 0, Combat_StrengthChange: 7 },
-            { text: "Discipline and Morale", next: "combatDandM", CharismaChange: 18, Combat_StrengthChange: -4 },
+            { text: "Discipline and Morale", next: "combatDandM", CharismaChange: 18, Combat_StrengthChange: -5 },
             { text: "Strength and Stamina", next: "combatStrengthandStam", CharismaChange: 0, Combat_StrengthChange: getRandomScore() }
         ],
         art: "sevei.png"

@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Napoleon's Day Off'</title>
+    <title>Napoleon's Day Off</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #welcome-message {
+            text-align: center;
+            display: block;
+        }
+
+        #welcome-image {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <div id="game-container">
@@ -15,6 +26,10 @@
             <section id="story-text"></section>
             <section id="choices-container"></section>
             <section id="art-container"></section>
+            <div id="welcome-message">
+                <p id="greeting">Napoleon is a workaholic so instead of spending the last bit of free time he has before the battle of waterloo relaxing he want's to make sure he is in the best condition he can be, help guide Napoleon through war related activities in order to maximise his combat strength and charisma. Be weary... if you dont end the day before 5 minutes elapse the war will happen without you and France will have no leader. When the french war band finishes playing that mean's the army would have left and 5 minutes would have past so watch out for that. How will you spend your time? How powerful and Charismatic will you be for the battle? click the start button below and show us yourself! Let's see how Enriching you can make Napoleons last bit of free time.
+                <img id="welcome-image" src="cum.png" alt="Welcome Image">
+            </div>
         </main>
         <aside id="sidebar">
             <div id="score-display">
@@ -25,6 +40,13 @@
                 <label for="username">ENTER YOUR NICKNAME LEADER!:</label>
                 <input type="text" id="username">
                 <button id="startButton">S'aventurer (Venture Forth)</button>
+                <audio id="audio" src="NGBM.mp3"></audio>
+                <script>
+                    document.getElementById('startButton').addEventListener('click', function () {
+                        document.getElementById('audio').play();
+                        document.getElementById('welcome-message').style.display = 'none';
+                    });
+                </script>
             </div>
         </aside>
     </div>
